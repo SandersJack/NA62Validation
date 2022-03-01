@@ -144,7 +144,7 @@ def validation():
 	for d in range(len(obj)):
 		for i in range(len(obj['evt'+str(d)]['det'])):
 			#if obj['evt'+str(d)]['z'][i] != obj2['evt'+str(d)]['z'][i]:
-			if abs(obj['evt'+str(d)]['z'][i] - obj2['evt'+str(d)]['z'][i]) > 1:
-				print(d,obj['evt'+str(d)]['z'][i],obj2['evt'+str(d)]['z'][i],obj['evt'+str(d)]['det'][i],obj2['evt'+str(d)]['det'][i])
+			if abs(obj['evt'+str(d)]['x'][i] - obj2['evt'+str(d)]['x'][i]) > .1:
+				print(d,obj['evt'+str(d)]['x'][i],obj2['evt'+str(d)]['x'][i],obj['evt'+str(d)]['det'][i],obj2['evt'+str(d)]['det'][i])
 				break		
 validation()	
